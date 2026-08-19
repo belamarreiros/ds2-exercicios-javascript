@@ -14,13 +14,20 @@ Um banco de dados pode ser necessário para guardar as informações que serão 
 
 ## Tabela comparativa
 
-xxxxxxxxx
+| Característica                    | Client-side                                                             | Server-side                                                           |
+| --------------------------------- | ----------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Local em que o código é executado | No navegador do usuário                                                 | No servidor                                                           |
+| Tecnologias de exemplo            | JavaScript                                                              | Node.js, PHP, VBScript                                                |
+| Responsabilidades                 | Alterar a página, validar dados e realizar ações no navegador           | Processar dados, acessar informações e controlar sessões              |
+| Vantagens                         | Resposta mais rápida para algumas ações e menos requisições ao servidor | Maior segurança para dados e possibilidade de acessar bancos de dados |
+| Limitações                        | O código fica disponível no navegador e depende dos recursos do cliente | Depende do servidor e pode gerar mais requisições                     |
+| Exemplos de tarefas               | Validar formulários e alterar elementos da página                       | Consultar banco de dados e controlar sessões de usuários              |
 
 ## Classificação das operações
 
 ### 1. Validar se um campo obrigatório foi preenchudo
 
-**Client-side.**
+**Client-side e Server-side**
 Essa validação pode ser feita diretamente no navegador antes de enviar o formulário. Isso permite avisar o usuário rapidamente que ele esqueceu de preencher algum campo.
 Também pode existir uma validação no servidor, principalmente para garantir que os dados recebidos estão corretos.
 
