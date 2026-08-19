@@ -56,3 +56,15 @@ Porém, o server-side também deve fazer a verificação do do valor antes de fi
 
 **Server-side**
 O controle de sessão normalmente é feito no servidor, porque ele precisa saber se o usuário está autenticado e quais informações ele pode acessar. O navegador pode armazenar um identificador da sessão, mas o conttole das permissões fica no servidor.
+
+## Exercício 3 - Primeiro script e diagnóstico pelo console
+
+### Erro
+
+Foi alterado intencionalmente o comando `console.log` para `Console.log`.
+
+A mensagem exibida no console foi:
+
+`Uncaught ReferenceError: Console is not defined`
+
+O erro aconteceu porque o JavaScript diferencia letras maiúsculas e minúsculas. O comando correto é `console.log`, com `console` escrito em letras minúsculas. Ao escrever `Console.log`, o JavaScript entende que estamos tentando utilizar algo chamado `Console`, que não foi definido.
