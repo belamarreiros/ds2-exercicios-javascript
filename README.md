@@ -68,3 +68,13 @@ A mensagem exibida no console foi:
 `Uncaught ReferenceError: Console is not defined`
 
 O erro aconteceu porque o JavaScript diferencia letras maiúsculas e minúsculas. O comando correto é `console.log`, com `console` escrito em letras minúsculas. Ao escrever `Console.log`, o JavaScript entende que estamos tentando utilizar algo chamado `Console`, que não foi definido.
+
+## Exercício 6 - Conversão de dados e cálculo de idade
+
+### Por que 20 + 5 pode resultar em 205?
+
+O `prompt()` retorna os dados digitados pelo usuário como texto, ou seja, como uma `string`. Por isso, quando o valor `20` é recebido pelo `prompt()` e fazemos `20 + 5` sem conversão, o JavaScript pode entender a operação como uma concatenação.
+
+Nesse caso, o resultado será `205`, porque o texto `"20"` é juntado ao número `5`.
+
+Para realizar uma soma corretamente, é necessário converter o valor para número usando `Number()`. Assim, `"20"` passa a ser `20` e a operação `20 + 5` resulta em `25`.
